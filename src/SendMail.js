@@ -13,12 +13,10 @@ const SendMail = () => {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm();
 
   const onSubmit = (formData) => {
-    console.log(formData);
     db.collection("emails").add({
       to: formData.to,
       subject: formData.subject,

@@ -18,6 +18,7 @@ import "./Sidebar.css";
 
 const Sidebar = () => {
   const dispatch = useDispatch();
+
   return (
     <div className="sidebar">
       <Button
